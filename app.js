@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //Connecting with mongodb
-mongoose.connect(process.env.MONGODB)
+mongoose.connect(process.env.MONGODB,)
 .then(() => {
     console.log("Database connected");
 });
